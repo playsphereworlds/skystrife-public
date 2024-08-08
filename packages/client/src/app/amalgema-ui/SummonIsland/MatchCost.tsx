@@ -2,7 +2,7 @@ import { OverlineSmall } from "../../ui/Theme/SkyStrife/Typography";
 import { OrbInput } from "./common";
 import { useOrbBalance } from "../hooks/useOrbBalance";
 
-export const MATCH_COST = 100_000_000_000_000_000_000n;
+export const MATCH_COST = 0n;
 
 export function MatchCost() {
   const orbBalance = useOrbBalance();

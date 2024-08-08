@@ -19,6 +19,7 @@ contract DeploySkyKey is Script {
 
     uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
     address admin = vm.addr(deployerPrivateKey);
+    
     vm.startBroadcast(deployerPrivateKey);
 
     IERC721Mintable skyKey = registerERC721(

@@ -22,13 +22,14 @@ contract DeployOrbs is Script {
 
     uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
     vm.startBroadcast(deployerPrivateKey);
-
+  address recipientAddress = vm.addr(deployerPrivateKey);
     IERC20Mintable orbToken = registerERC20(
       world,
       ORB_NAMESPACE,
       ERC20MetadataData({ decimals: 18, name: "Orbs", symbol: unicode"🔮" })
     );
-    orbToken.mint(worldAddress, SKYPOOL_SUPPLY);
+    orbToken.mint(worldAddress, SKYPOOL_SUPPLY/2);
+    orbToken.mint(recipientAddress, SKYPOOL_SUPPLY/2);
     SkyPoolConfig.setOrbToken(address(orbToken));
 
     vm.stopBroadcast();

@@ -21,7 +21,7 @@ export function Providers({ children }: Props) {
     () =>
       getDefaultConfig({
         appName: "Sky Strife",
-        projectId: "57f814fbe33baeb0090e3917cf72064d",
+        projectId: "7507f150628a6bc71f5f8153b2a3f36c",
         chains: [networkConfig.chain],
         transports: {
           [networkConfig.chain.id]: http(),

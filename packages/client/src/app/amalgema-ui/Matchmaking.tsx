@@ -80,7 +80,7 @@ export function Matchmaking() {
   const getNowSeconds = () => Math.floor(DateTime.now().toSeconds());
 
   const matchmakingServerUrl =
-  (chain.id === 690) ? "https://skystrife-matchmaking.onrender.com" : "http://localhost:5201";
+  (chain.id === 690 || chain.id === 17069) ? "https://skystrife-matchmaking.onrender.com" : "http://localhost:5201";
 
   const [isOpen, setIsOpen] = useState(false);
   const { externalWalletClient } = useAmalgema();

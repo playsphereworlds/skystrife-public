@@ -13,7 +13,7 @@ extra_output_files = ["abi", "evm.bytecode"]
 fs_permissions = [{ access = "read", path = "./" }]
 
 [profile.garnet]
-eth_rpc_url = "https://rpc.garnetchain.com"
+eth_rpc_url = "https://17069.rpc.thirdweb.com/27ba31e8fedf04a29c6004f4f745038e"
 
 [profile.redstone]
 eth_rpc_url = "https://rpc.redstonechain.com/"

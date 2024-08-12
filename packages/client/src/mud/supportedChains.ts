@@ -22,12 +22,12 @@ export const garnet = {
   },
   rpcUrls: {
     default: {
-      http: ["https://rpc.garnetchain.com	"],
-      webSocket: ["wss://rpc.garnetchain.com	"],
+      http: ["https://17069.rpc.thirdweb.com/27ba31e8fedf04a29c6004f4f745038e"],
+      webSocket: ["wss://17069.rpc.thirdweb.com/27ba31e8fedf04a29c6004f4f745038e"],
     },
     public: {
-      http: ["https://rpc.garnetchain.com	"],
-      webSocket: ["wss://rpc.garnetchain.com	"],
+      http: ["https://17069.rpc.thirdweb.com/27ba31e8fedf04a29c6004f4f745038e"],
+      webSocket: ["wss://17069.rpc.thirdweb.com/27ba31e8fedf04a29c6004f4f745038e"],
     },
   },
   blockExplorers: {

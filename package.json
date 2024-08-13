@@ -34,7 +34,7 @@
     "ci:install-foundry": "curl -L https://foundry.paradigm.xyz | bash && ~/.foundry/bin/foundryup",
     "ci:install-local": "bash foundryup",
     "ci:build-contracts": "cd packages/contracts && ~/.foundry/bin/forge build && cd ../..",
-    "ci:build-local": "cd packages/contracts && ./forge build && cd ../.."
+    "ci:build-local": "cd packages/contracts && ../../forge build && cd ../.."
 
   },
   "devDependencies": {
